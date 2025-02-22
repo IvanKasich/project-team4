@@ -1,0 +1,137 @@
+.works-image-wrapper {
+  background-color: #7a3145;
+}
+
+.works-image-wrapper .container {
+  padding: 40px 20px;
+}
+
+.works-image {
+  border-radius: 30px;
+}
+
+.works-desc-wrapper {
+  background-color: #576f35;
+}
+
+.works-desc-wrapper .container {
+  padding: 80px 20px;
+}
+
+.works-title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  margin-bottom: 20px;
+}
+
+.works-title span {
+  color: #d4bfc4;
+}
+
+.works-text {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #fbfbfb;
+  margin-bottom: 40px;
+}
+
+.works-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  counter-reset: list-item;
+}
+
+.works-item {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  padding: 12px 27px 12px 100px;
+  background-color: #fbfbfb;
+  counter-increment: list-item;
+  position: relative;
+}
+
+.works-item-text {
+  font-size: 14px;
+  line-height: 1.43;
+  color: #858585;
+}
+
+.works-item-text span {
+  font-weight: 700;
+  color: #141414;
+}
+
+.works-item-text::before {
+  content: counter(list-item);
+  position: absolute;
+  width: 52px;
+  height: 52px;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 18px;
+  color: #fbfbfb;
+
+  border: 5px solid #d4bfc4;
+  border-radius: 100%;
+  background-color: #7a3145;
+}
+
+@media screen and (min-width: 768px) {
+  .works-desc-wrapper .container {
+    padding: 100px 164px;
+  }
+
+  .works-title {
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .works-text {
+    margin-bottom: 52px;
+  }
+
+  .works-text,
+  .works-item-text {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+
+  .works-list {
+    gap: 24px;
+  }
+
+  .works-item {
+    padding: 12px 15px 12px 100px;
+  }
+}
+
+@media screen and (max-width: 1279px) {
+  .section.works {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .section.works {
+    display: flex;
+  }
+
+  .works-image-wrapper .container,
+  .works-desc-wrapper .container {
+    padding: 100px;
+  }
+}
