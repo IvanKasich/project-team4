@@ -44,18 +44,18 @@
 
 @media only screen and (min-width: 1280px) {
   .advertisement {
-    padding: 100px;
+    padding: 100px 0;
     height: 428px;
   }
 
-  /*.container{
-        padding: 0 110px 0 116px;
-    }*/
-  .advertisement-text {
+  .container {
+    padding: 0 110px 0 116px;
+  }
+  .advert-text {
     font-size: 76px;
 
     padding-left: 16px;
-    max-width: 1054px;
+    width: 1054px;
     /*padding-right: 10px;*/
   }
 
