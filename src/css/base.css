@@ -3,3 +3,6 @@ body {
   color: #141414;
   scroll-behavior: smooth;
 }
+.section {
+  padding: 100px 0;
+}
