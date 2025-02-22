@@ -1,1 +1,44 @@
-<section>your order</section>
+
+
+    <section class="order">
+        <div class="container">
+            <h2 class="order-title">Fresh <span>Harvest</span> Box has got you covered</h2>
+            <p class="order-text">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to
+                eat
+                healthier or support local
+                farmers. Order your box today and start enjoying the best that nature has to offer!</p>
+
+            <div class="order-cont">
+                <div class="order-modal">
+                    <p class="modal-text">Ordering <span class="text-red">from us</span> is quick and easy! Fill out <span
+                            class="text-green">the form</span> below and we will contact you !</p>
+                    <form class="order-form">
+                        <input class="form-input" type="text" name="user-name" placeholder="Full Name"
+                            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                        <input class="form-input" type="email" name="user-email" placeholder="Email"
+                            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                        <textarea class="form-input comment" type="text" name="user-comment" placeholder="Comment"
+                            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"></textarea>
+                        <button class="order-btn" type="submit">Send</button>
+                    </form>
+                </div>
+                <div class="order-links">
+                    <picture>
+                        <source srcset="/img/your-order/order-fresh-desk.webp 1x, /img/your-order/order-fresh-desk2x.webp 2x"
+                            media="(min-width: 1280px)">
+                        <source srcset="/img/your-order/order-fresh-tabl.webp 1x, /img/your-order/order-fresh-tabl2x.webp 2x"
+                            media="(min-width: 768px)">
+                        <img class="order-photo" srcset="/img/your-order/order-fresh.webp 1x, /img/your-order/order-fresh2x.webp 2x"
+                            src="/img/your-order/order-fresh.webp" alt="woman make a fresh juice" width="295">
+                    </picture>
+                    <p class="order-links-text">Follow us on our social networks:</p>
+                    <ul class="order-list">
+                        <li class="order-item"><a class="order-social" href="https://www.instagram.com/goitclub/">instagram</a></li>
+                        <li class="order-item"><a class="order-social" href="https://www.youtube.com/c/GoIT">facebook</a></li>
+                        <li class="order-item"><a class="order-social" href="https://www.facebook.com/goITclub/">youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+    </section>
+    
+
