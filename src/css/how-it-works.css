@@ -100,6 +100,12 @@
   background-color: #7a3145;
 }
 
+@media screen and (max-width: 320px) {
+  .works-image-wrapper {
+    padding: 80px 20px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .works-image-wrapper {
     padding: 100px 64px;
