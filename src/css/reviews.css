@@ -5,7 +5,7 @@
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
   font-size: 48px;
-  line-height: 1.1;
+  line-height: 1.08;
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #141414;
@@ -20,7 +20,7 @@
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.43;
   color: #141414;
   margin-bottom: 40px;
 }
@@ -70,14 +70,18 @@
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.4;
+  line-height: 1.43;
   text-align: center;
   color: #858585;
+  padding: 0 7px;
 }
 
 /* Styles for Tablet devices */
 
 @media only screen and (min-width: 768px) {
+  .reviews {
+    padding: 100px 0;
+  }
   .reviews-title {
     font-size: 64px;
     line-height: 1;
@@ -88,7 +92,7 @@
   .reviews-text {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.3;
+    line-height: 1.25;
     margin-bottom: 52px;
     max-width: 553px;
   }
