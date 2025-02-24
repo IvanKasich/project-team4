@@ -1,6 +1,11 @@
 header {
-  background-color: #576F35;
+  background-color: #2E8B57;
   padding-top: 36px;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 100; 
 }
  
 .container {
@@ -122,15 +127,11 @@ header {
   }
 }
 @media (max-width: 375px) {
-  header {
+  .header {
     padding-top: 28px; 
     padding-left: 20px;
   }
 
-  .container {
-    max-width: 375px;
-    padding: 0 20px; 
-  }
 
   .logo-icon {
     width: 16px; 
