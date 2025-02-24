@@ -1,13 +1,18 @@
+@media screen and (min-width: 769px) {
+    .modal {
+        display: none;
+    }
+}
 
-/* 
-@media screen and (max-width: 768px) { */
+
+
+@media screen and (max-width: 768px) {
     
 
 .modal {
-    display: none;
-    position: fixed;
+    display: block;
+    position: absolute;
     z-index: 1;
-    right: -351px;
     top: 0;
     width: 351px;
     height: 1020px;
@@ -15,6 +20,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
+    margin: 0 auto;
 
     transition: right 0.5s ease;
 }
@@ -27,31 +33,76 @@
 
 .btn-x {
     position: absolute;
-    top: 32px;
-    right: 32px;
-    left: 279px;
-
-} 
-
-.last-btn {
-    border: 1px solid #fbfbfb;
-    border-radius: 12px;
-    padding: 12px;
-    width: 114px;
-    height: 44px;
-}
-
-.last-btn:hover {
-    border: 1px solid #fbfbfb;
-}
+    margin-left: 279px;
+    margin-top: 32px;
+    background-color: #576f35;
+    border: none;
+ }
 
 
 .modal-content {
-    width: 123px;
-    height: 180px;
-    margin-top: auto;
-    margin-bottom: auto;
+    text-align: center;
+    justify-content: center;
+    padding-left: 114px;
+    padding-right: 114px;
+    margin-bottom: 80px;
+
 }
+
+.last-btn {
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: center;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    padding: 12px;
+    width: 118px;
+    height: 44px;
+    margin-bottom: 24px;
+    background-color: transparent;
+    color: #fbfbfb;
+}
+
+
+.last-btn.current {
+   background-color: #fbfbfb;
+   color: #7a3145;
+}
+
+
+.last-btn-one {
+    white-space: nowrap;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: none;
+    padding: 16px 32px;
+    width: 157px;
+    height: 52px;
+    margin: 0 auto;
+    background-color: #7a3145;
+    color: #fbfbfb;
+    
+}
+
+
+.last-container {
+    text-align: center;
+    justify-content: center;
+    padding-left: 114px;
+    padding-right: 114px;
+
+}
+
+}
+
+
 
 
 
