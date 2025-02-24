@@ -1,44 +1,150 @@
-.header {
-  padding: 20px 0;
+header {
+  background-color: #576F35;
+  padding-top: 36px;
 }
-.nav {
+ 
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
-}
-.nav-logo {
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  padding: 0 100px;
 }
-.nav-list {
+
+.logo-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
+  gap: 9px;
 }
-.nav-link {
-  position: relative;
-  display: block;
+
+.logo-icon {
+  width: 30px;
+  height: 30px;
+}
+
+.logo {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #FBFBFB;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu-list {
+  display: flex;
+  gap: 8px;
+  align-items: center; 
+}
+
+.nav-li {
+  /* margin-left: 20px; Видалено відступ */
+}
+
+.nav-button {
+  background-color: transparent;
+  color: #FBFBFB;
+  border: 1px solid white;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 12px;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 16px;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  transition: 200ms ease-in;
+  line-height: 1.25;
+  letter-spacing: 0em;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+
+
+
+
+.shop-now {
+  background-color: #7A3145;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-family: 'Inter Tight', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.015em;
+  margin-left: 20px;
 }
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+
+.menu-toggle {
+  display: none;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+
+@media (max-width: 768px) {
+  header {
+    padding-top: 42px;
+    padding-left: 32px; 
+  }
+  .container {
+    max-width: 768px;
+    padding: 0 32px;
+  }
+
+  .logo-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .logo {
+    font-size: 1em;
+  }
+
+  .header-menu-list, .shop-now {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #FBFBFB;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    width: 40px; 
+    height: 40px; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+}
+@media (max-width: 375px) {
+  header {
+    padding-top: 28px; 
+    padding-left: 20px;
+  }
+
+  .container {
+    max-width: 375px;
+    padding: 0 20px; 
+  }
+
+  .logo-icon {
+    width: 16px; 
+    height: 16px;
+  }
+
+  .logo {
+    font-size: 0.02em;
+  }
+
+  .menu-toggle {
+    top: 20px; 
+    right: 20px; 
+    width: 32px; 
+    height: 32px;
+  }
 }
