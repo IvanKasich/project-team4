@@ -1,10 +1,12 @@
 .hero-section {
+  height: 100%;
   min-height: 840px;
   background-color: #576f35;
   background-image: url(/img/hero/hero-img-mob-min.webp);
-  background-size: contain;
+  background-size: 375px;
   background-repeat: no-repeat;
   background-position: bottom;
+  padding-top: 100px;
 }
 
 @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
@@ -20,13 +22,15 @@
   letter-spacing: -0.01em;
   text-transform: uppercase;
   color: #fbfbfb;
-  padding-top: 100px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
+
 }
 
-@media screen and (max-width: 374px) {
+@media screen and (max-width:350px) {
   .hero-title {
-    font-size: 43px;
+    font-size: 48px;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
   }
 }
 
@@ -44,6 +48,8 @@
   .hero-section {
     min-height: 1020px;
     background-image: url(../img/hero/hero-img-tab-min.webp);
+    background-size: 768px;
+    padding-top: 120px;
   }
 
   @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
@@ -54,8 +60,7 @@
 
   .hero-title {
     font-size: 76px;
-    padding-top: 120px;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
   }
 
   .hero-text {
@@ -71,6 +76,8 @@
     min-height: 100%;
     background-image: url(/img/hero/hero-img-desk-min.webp);
     background-position: right;
+    background-size: 640px;
+    padding-top: 232px;
   }
 
   @media screen and (min-resolution: 2x), (-webkit-min-device-pixel-ratio: 2) {
@@ -81,8 +88,7 @@
 
   .hero-title {
     max-width: 502px;
-    padding-top: 232px;
-    padding-bottom: 128px;
+    margin-bottom: 128px;
   }
 
   .hero-text {
