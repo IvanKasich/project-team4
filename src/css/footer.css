@@ -32,7 +32,7 @@
 @media screen and (min-width: 768px) {
   .footer-container {
     width: 704px;
-    display: flex;
+    /* display: flex; */
     flex-wrap: wrap;
   }
 }
@@ -115,7 +115,7 @@
 @media screen and (min-width: 768px) {
   .footer-nav {
     gap: 64px;
-    margin-right: 20px;
+    margin-right: 0;
   }
 }
 
