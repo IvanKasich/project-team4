@@ -73,7 +73,7 @@
   line-height: 1.43;
   text-align: center;
   color: #858585;
-  padding: 0 7px;
+  padding: 0 6px;
 }
 
 @media only screen and (max-width: 350px) {
@@ -122,6 +122,7 @@
   }
   .reviews-subtitle-text {
     font-size: 16px;
+    line-height: 1.25;
   }
 }
 /* Styles for Desktop devices */
