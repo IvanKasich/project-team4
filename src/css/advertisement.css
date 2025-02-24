@@ -1,5 +1,21 @@
-.animate__animated.animate__backInUp {
-    --animate-duration: 0.9s;
+@keyframes backgroundcolorChange {
+    0% {
+        background-color: #576f35;
+    }
+
+    50% {
+        background-color: #7a3145;
+    }
+
+    100% {
+        background-color: #576f35;
+    }
+
+}
+
+.advert-span {
+    animation: backgroundcolorChange 2s infinite alternate;
+    color: #fbfbfb;
 }
 
 .advert-text {
