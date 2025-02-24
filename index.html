@@ -19,7 +19,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-team4/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-team4/assets/index-CB1Hj8cn.css">
+    <link rel="stylesheet" crossorigin href="/project-team4/assets/index-D-17H1sd.css">
   </head>
   <body>
     <header>header</header>
@@ -168,8 +168,53 @@
         </section> 
 
       <section>reviews</section>
-      <section>your order</section>
-
+      <section class="order" id="order-shop">
+    <div class="container">
+        <h2 class="order-title">Fresh <span>Harvest</span> Box has got you covered</h2>
+        <p class="order-text">Our boxes are packed with delicious, nutritious vegetables, perfect for anyone looking to
+            eat
+            healthier or support local
+            farmers. Order your box today and start enjoying the best that nature has to offer!
+        </p>
+        <div class="order-cont">
+            <div class="order-modal">
+                <p class="modal-text">Ordering <span class="text-red">from us</span> is quick and easy! Fill out <span
+                        class="text-green">the form</span> below and we will contact you !</p>
+                <form class="order-form">
+                    <input class="form-input" type="text" name="user-name" placeholder="Full Name"
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                    <input class="form-input" type="email" name="user-email" placeholder="Email"
+                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
+                    <textarea class="form-input comment" name="user-comment" placeholder="Comment"></textarea>
+                    <button class="order-btn" type="submit">Send</button>
+                </form>
+            </div>
+            <div class="order-links">
+                <picture class="order-img">
+                    <source
+                        srcset="/project-team4/assets/order-fresh-desk-BKvzuaht.webp 1x, /project-team4/assets/order-fresh-desk2x-DOvz3Z8N.webp 2x"
+                        media="(min-width: 1280px)">
+                    <source
+                        srcset="/project-team4/assets/order-fresh-tabl-C4Q4fpz8.webp 1x, /project-team4/assets/order-fresh-tabl2x-DZULWuH4.webp 2x"
+                        media="(min-width: 768px)">
+                    <img class="order-photo"
+                        srcset="/project-team4/assets/order-fresh-ZOr0EYvf.webp 1x, /project-team4/assets/order-fresh2x-B8K3J7K3.webp 2x"
+                        src="/project-team4/assets/order-fresh-ZOr0EYvf.webp" alt="woman make a fresh juice" width="295">
+                </picture>
+                <p class="order-links-text">Follow us on our social networks:</p>
+                <ul class="order-list">
+                    <li class="order-item"><a class="order-social" target="_blank"
+                            href="https://www.instagram.com/goitclub/">instagram</a></li>
+                    <li class="order-item"><a class="order-social" target="_blank"
+                            href="https://www.facebook.com/goITclub/">facebook</a>
+                    </li>
+                    <li class="order-item"><a class="order-social" target="_blank" href="https://www.youtube.com/c/GoIT">youtube</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+     </div>
+</section>
     </main>
 
     <footer>footer</footer>
