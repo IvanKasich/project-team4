@@ -1,48 +1,47 @@
 header {
-  background-color: transparent;
-  padding-top: 36px;
-  position: absolute; 
+  background-color: green;
+  padding-top: 20px;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%; 
-  z-index: 100; 
+  width: 100%;
+  z-index: 100;
 }
- 
+
 .container {
-  max-width: 1080px;
-  margin: 0 auto;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0 100px;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 9px;
 }
 
 .logo-icon {
-  width: 30px;
-  height: 30px;
+  width: 168px;
+  height: 16px;
+  fill: white;
+}
+
+.logo-icon-two {
+  width: 32px;
+  height: 32px;
+  fill: white;
 }
 
 .logo {
   font-size: 1.2em;
   font-weight: bold;
-  color: #FBFBFB;
 }
 
 .nav-container {
-  display: flex;
-  align-items: center;
+  display: none;
 }
 
 .header-menu-list {
-  display: flex;
-  gap: 8px;
-  align-items: center; 
+  display: none;
 }
 
 .nav-li {
@@ -63,89 +62,73 @@ header {
   letter-spacing: 0em;
 }
 
-
-
-
 .shop-now {
-  background-color: #7A3145;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  font-family: 'Inter Tight', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  line-height: 1.1;
-  letter-spacing: -0.015em;
-  margin-left: 20px;
-}
-
-.menu-toggle {
   display: none;
 }
 
+.menu-toggle {
+  display: block;
+  border: none;
+  cursor: pointer;
+  background: none;
+  padding: 0;
+}
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
+  /* Планшетна версія */
   header {
     padding-top: 42px;
-    padding-left: 32px; 
   }
-  .container {
-    max-width: 768px;
-    padding: 0 32px;
+  .logo-icon-two{
+    width: 40px;
+    height: 40px;
   }
 
   .logo-icon {
-    width: 25px;
-    height: 25px;
+    width: 216px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  /* Комп'ютерна версія */
+  header {
+    padding-top: 48px;
   }
 
-  .logo {
-    font-size: 1em;
+  .nav-container {
+    display: flex;
+    align-items: center;
   }
 
-  .header-menu-list, .shop-now {
+  .header-menu-list {
+    display: flex;
+    gap: 8px;
+  }
+
+  .shop-now {
+    display: block;
+    background-color: #7A3145;
+    color: white;
+    width: 157px;
+     height: 52px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Inter Tight', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: -0.015em;
+    margin-left: 20px;
+  }
+
+  .menu-toggle {
     display: none;
   }
 
-  .menu-toggle {
-    display: block;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    font-size: 24px;
-    color: #FBFBFB;
-    position: absolute;
-    top: 32px;
-    right: 32px;
-    width: 40px; 
-    height: 40px; 
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-  }
-}
-@media (max-width: 375px) {
-  .header {
-    padding-top: 28px; 
-    padding-left: 20px;
-  }
-
-
   .logo-icon {
-    width: 16px; 
-    height: 16px;
-  }
-
-  .logo {
-    font-size: 0.02em;
-  }
-
-  .menu-toggle {
-    top: 20px; 
-    right: 20px; 
-    width: 32px; 
-    height: 32px;
+    width: 216px;
+    height: 20px;
   }
 }
