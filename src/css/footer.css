@@ -11,7 +11,7 @@
 
 @media screen and (min-width: 1280px) {
   .footer {
-    padding: 50px 0;
+    padding: 52px 0;
   }
 }
 
@@ -54,7 +54,7 @@
 
 @media screen and (min-width: 768px) {
   .footer-top {
-    /* width: 704px; */
+    width: 100%;
     gap: 64px;
     /* justify-content: space-between; */
   }
@@ -62,7 +62,7 @@
 /* Блок із логотипом та слоганом */
 .footer-brand {
   /* flex: 1 1 100%; За замовчуванням на всю ширину, щоб на малих екранах блоки йшли один під одним */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .footer-logo {
@@ -93,7 +93,7 @@
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 14px;
-  max-width: 335px;
+  max-width: 289px;
   line-height: 1.4;
   color: #fbfbfb;
 }
