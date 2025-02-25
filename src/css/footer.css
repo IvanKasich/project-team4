@@ -1,21 +1,280 @@
 .footer {
-  padding: 20px 0;
+  background-color: #7a3145;
+  padding: 40px 20px;
 }
-.footer-desc {
-  text-align: center;
+
+@media screen and (min-width: 768px) {
+  .footer {
+    padding: 32px 0;
+  }
 }
-.footer-link {
-  position: relative;
+
+@media screen and (min-width: 1280px) {
+  .footer {
+    padding: 52px 0;
+  }
 }
-.footer-link::before {
-  content: '';
-  position: absolute;
-  bottom: 6%;
-  left: 50%;
-  transform: translateX(-50%) skewX(-12deg);
-  z-index: -1;
-  width: 110%;
-  height: 24%;
-  background-color: #41d1ff;
-  transition: 200ms ease;
+
+.footer-container {
+  /* Центрування та обмеження ширини */
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (min-width: 375px) {
+  .footer-container {
+    width: 335px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    width: 704px;
+    /* display: flex; */
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-container {
+    width: 1080px;
+    padding: 0;
+  }
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px; /* Відступи між блоками */
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-top {
+    width: 100%;
+    gap: 64px;
+    /* justify-content: space-between; */
+  }
+}
+/* Блок із логотипом та слоганом */
+.footer-brand {
+  /* flex: 1 1 100%; За замовчуванням на всю ширину, щоб на малих екранах блоки йшли один під одним */
+  /* margin-bottom: 20px; */
+}
+
+.footer-logo {
+  max-width: 168px;
+  height: auto;
+  display: block;
+  margin-bottom: 14px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-logo {
+    font-size: 20px;
+  }
+}
+
+.icon-foot {
+  fill: #fbfbfb;
+}
+
+@media screen and (min-width: 768px) {
+  .icon-foot {
+    width: 216px;
+    height: 20px;
+  }
+}
+
+.footer-slogan {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  max-width: 289px;
+  line-height: 1.4;
+  color: #fbfbfb;
+}
+
+@media (min-width: 768px) {
+  .footer-slogan {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+/* Навігація у футері */
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-nav {
+    gap: 64px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-nav {
+    flex-direction: row;
+    gap: 121px;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #fbfbfb;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-links {
+    gap: 24px;
+  }
+}
+
+.footer-links:hover {
+  text-decoration: underline;
+}
+
+/* Контакти */
+.footer-contacts {
+  /* flex: 1 1 auto; */
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex-grow: 1;
+  font-style: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-contacts {
+    font-size: 16px;
+    line-height: 1.25;
+    gap: 24px;
+  }
+}
+
+.footer-phone {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  max-width: 215px;
+  color: #fbfbfb;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+}
+
+.footer-phone:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-phone {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+.footer-address {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.4;
+  max-width: 215px;
+  color: #fbfbfb;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  margin: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-address {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+/* Нижня частина футера */
+.footer-bottom {
+  /* Прибираємо стандартні стилі списку */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Вмикаємо флекс-режим і розміщуємо елементи вертикально */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* Відстань між елементами (першим і другим <li>) */
+  gap: 16px;
+  /* Приклад відступу згори, щоб відділити від вмісту вище (необов’язково) */
+  margin-top: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-bottom {
+    margin-top: 100px;
+    flex-grow: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-bottom {
+    margin-top: 125px;
+    justify-content: space-between;
+  }
+}
+
+/* Оформлення кожного <li> */
+.footer-privacy-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.42857;
+  color: #d4bfc4;
+  margin: 0;
+  text-decoration: none;
+}
+
+.footer-privacy-item:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-privacy-item {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+  }
+}
+
+/* Слеш між посиланнями */
+.footer-slash {
+  padding: 0 8px;
+}
+
+/* 
+   Мобільна версія: 
+   - від 320px до 374px: "гумова" (необов’язково окремо прописувати)
+   - з 375px починаємо адаптивну логіку
+*/
+@media (min-width: 375px) {
+  /*  стилі для >=375px за потреби */
 }
