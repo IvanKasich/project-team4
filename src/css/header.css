@@ -1,9 +1,8 @@
 header {
-
   background: linear-gradient(rgba(87, 111, 53, 0.3), rgba(87, 111, 53, 0.6));
   padding-top: 20px;
 
-  padding-bottom: 10px;
+  padding-bottom: 5px;
   position: fixed;
   top: 0;
   left: 0;
@@ -81,6 +80,9 @@ header > .container {
 }
 
 @media screen and (min-width: 768px) {
+  header > .container {
+    padding-top: 32px;
+  }
   /* Планшетна версія */
   .logo-icon-two {
     width: 40px;

@@ -237,12 +237,14 @@
     justify-content: space-between;
   }
 }
-
+.footer-privacy-list {
+  display: flex;
+}
 /* Оформлення кожного <li> */
 .footer-privacy-item {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.43;
   color: #d4bfc4;
   margin: 0;
   text-decoration: none;
@@ -250,6 +252,25 @@
 
 .footer-privacy-item:hover {
   text-decoration: underline;
+}
+.footer-privacy-item:not(:last-child)::after {
+  content: '/';
+  color: #d4bfc4;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+@media screen and (min-width: 1280px) {
+  .footer-privacy-item:not(:last-child)::after {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+}
+.footer-copy {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.43;
+  color: #d4bfc4;
+  margin: 0;
 }
 
 @media screen and (min-width: 768px) {
