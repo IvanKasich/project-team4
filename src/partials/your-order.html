@@ -11,11 +11,14 @@
                 <p class="modal-text">Ordering <span class="text-red">from us</span> is quick and easy! Fill out <span
                         class="text-green">the form</span> below and we will contact you !</p>
                 <form class="order-form">
-                    <input class="form-input" type="text" name="user-name" placeholder="Full Name"
-                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
-                    <input class="form-input" type="email" name="user-email" placeholder="Email"
-                        pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})" required>
-                    <textarea class="form-input comment" name="user-comment" placeholder="Comment"></textarea>
+                    <label class="visually-hidden" for="user-name">Name</label>
+                    <label class="visually-hidden" for="user-email">Email</label>
+                    <label class="visually-hidden" for="user-comment">Comment</label>
+                    <input class="form-input" id="user-name" type="text" name="user-name" placeholder="Full Name"
+                        pattern="[A-Za-z]{3}" required>
+                    <input class="form-input" id="user-email" type="email" name="user-email" placeholder="Email"
+                        pattern="(?:[^\s@]*)[\w]{1}@{1}(?:[^\s@]+)[\.]{1}(?:[^\s@]{1,255}\w{1})" required>
+                    <textarea class="form-input comment" id="user-comment" name="user-comment" placeholder="Comment"></textarea>
                     <button class="order-btn" type="submit">Send</button>
                 </form>
             </div>

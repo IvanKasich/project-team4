@@ -116,7 +116,7 @@
 .order-btn {
     display: block;
     margin: 0;
-    border: none;
+    border: 1px solid #7A3145;
     border-radius: 30px;
     width: 100%;
     height: 52px;
@@ -133,6 +133,7 @@
 .order-btn:active {
     background-color: #FBFBFB;
     color: #7A3145;
+   
 
 }
 
@@ -344,11 +345,13 @@
     .order-btn:focus {
         background-color: #D4BFC4;
         color: #7A3145;
+
     }
 
     .order-btn:active {
         background-color: #FBFBFB;
         color: #7A3145;
+        
     }
 
 
