@@ -1,0 +1,62 @@
+@keyframes backgroundcolorChange {
+  0% {
+    background-color: #576f35;
+  }
+
+  50% {
+    background-color: #7a3145;
+  }
+
+  100% {
+    background-color: #576f35;
+  }
+}
+
+.advert-span {
+  animation: backgroundcolorChange 2s infinite alternate;
+  color: #fbfbfb;
+}
+
+.advert-text {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  text-transform: uppercase;
+  color: #141414;
+}
+
+.advert-span {
+  color: #fbfbfb;
+  background-color: #576f35;
+  border-radius: 12px;
+  display: inline-block;
+}
+
+@media screen and (min-width: 768px) {
+  .advert-text {
+    font-size: 64px;
+    line-height: 1;
+  }
+
+  .advert-span {
+    padding-top: 20px;
+    padding-bottom: 4px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .advert-text {
+    font-size: 76px;
+    /*width: 1054px;*/
+    padding-left: 16px;
+    padding-right: 10px;
+  }
+
+  .advert-span {
+    padding-left: 16px;
+    padding-right: 8px;
+    margin-left: -16px;
+    padding-top: 4px;
+  }
+}
