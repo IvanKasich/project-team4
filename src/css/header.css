@@ -1,5 +1,5 @@
 header {
-  background-color: green;
+  background-color: rgba(20, 20, 20, 0.4);
   padding-top: 20px;
   position: fixed;
   top: 0;
@@ -8,7 +8,7 @@ header {
   z-index: 100;
 }
 
-.container {
+header > .container {
   max-width: 100%;
   display: flex;
   justify-content: space-between;
@@ -18,10 +18,12 @@ header {
   display: flex;
   align-items: center;
 }
-
 .logo-icon {
-  width: 168px;
-  height: 16px;
+  display: block;
+}
+.logo-vector {
+  /* width: 168px;
+  height: 16px; */
   fill: white;
 }
 
@@ -44,15 +46,13 @@ header {
   display: none;
 }
 
-.nav-li {
-  /* margin-left: 20px; Видалено відступ */
-}
-
 .nav-button {
+  display: block;
+  padding: 12px;
   background-color: transparent;
-  color: #FBFBFB;
+  color: #fbfbfb;
   border: 1px solid white;
-  padding: 5px 10px;
+
   cursor: pointer;
   border-radius: 12px;
   font-family: 'Inter Tight', sans-serif;
@@ -74,14 +74,24 @@ header {
   padding: 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   /* Планшетна версія */
   header {
-    padding-top: 42px;
+    padding-top: 32px;
   }
-  .logo-icon-two{
+  .logo-icon-two {
     width: 40px;
     height: 40px;
+  }
+
+  .logo-container {
+    width: 216px;
+    height: 20px;
+  }
+
+  .logo-vector {
+    width: 216px;
+    height: 20px;
   }
 
   .logo-icon {
@@ -92,9 +102,6 @@ header {
 
 @media screen and (min-width: 1280px) {
   /* Комп'ютерна версія */
-  header {
-    padding-top: 48px;
-  }
 
   .nav-container {
     display: flex;
@@ -107,11 +114,14 @@ header {
   }
 
   .shop-now {
+    text-align: center;
+    padding-top: 16px;
+    padding-bottom: 16px;
     display: block;
-    background-color: #7A3145;
+    background-color: #7a3145;
     color: white;
     width: 157px;
-     height: 52px;
+    height: 52px;
     border: none;
     border-radius: 30px;
     cursor: pointer;
@@ -125,10 +135,5 @@ header {
 
   .menu-toggle {
     display: none;
-  }
-
-  .logo-icon {
-    width: 216px;
-    height: 20px;
   }
 }
