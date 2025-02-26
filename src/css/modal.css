@@ -90,6 +90,10 @@
   background-color: #7a3145;
   color: #fbfbfb;
   border: none;
+  border-radius: 30px;
+  padding: 16px 32px;
+  width: 157px;
+  height: 52px;
 }
 
 .last-w:active {
@@ -119,5 +123,25 @@
 @media screen and (min-width: 1280px) {
   .modal {
     display: none;
+  }
+  .nav-button:hover,
+  .nav-button:focus {
+    background: #d4bfc4;
+    color: #7a3145;
+    border-color: #d4bfc4;
+  }
+  .nav-button:active {
+    background: #fbfbfb;
+    color: #7a3145;
+    border-color: #fbfbfb;
+  }
+  .shop-now:hover,
+  .shop-now:focus {
+    background: #d4bfc4;
+    color: #7a3145;
+  }
+  .shop-now:active {
+    background: #fbfbfb;
+    color: #7a3145;
   }
 }

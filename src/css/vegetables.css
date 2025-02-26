@@ -157,7 +157,7 @@
 
 @media screen and (min-width: 768px) {
   .vegetables-title-div {
-    padding-right: 78px;
+    width: 626px;
   }
   .vegetables-h-two {
     margin-bottom: 24px;
@@ -178,9 +178,6 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .vegetables-title-div {
-    padding-right: 454px;
-  }
   .vegetables-items {
     width: calc((100% - 48px) / 3);
     padding: 32px;
