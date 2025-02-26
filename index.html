@@ -19,42 +19,46 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/project-team4/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/project-team4/assets/index-KcWQAEUU.css">
+    <link rel="stylesheet" crossorigin href="/project-team4/assets/index-D8j9xtCb.css">
   </head>
   <body>
-    
     <header>
-        <div class="container">
-          <div class="logo-container">
-            <svg class="logo-icon" width="168" height="16">
-                <use href="/project-team4/assets/sprite-CI9QTa5D.svg#icon-logo"></use>
-              </svg>
-            <div class="logo">
-            </div>
-          </div>
-          <button class="menu-toggle">
-            <svg class="logo-icon-two" width="32" height="32">
-                <use href="/project-team4/assets/sprite-CI9QTa5D.svg#icon-1"></use>
-              </svg>
-          </button> 
-          <div class="nav-container">
-            <nav class="header-nav">
-                <ul class="header-menu-list">
-                    <li class="header-menu-item"><button class="nav-button ">How It Works</button></li>
-                    <li class="header-menu-item"><button class="nav-button ">Vegetables</button></li>
-                    <li class="header-menu-item"><button class="nav-button ">Reviews</button></li>
-                </ul>
-            </nav>
-            <button class="shop-now">SHOP NOW</button>
-          </div>
-        </div>
-      </header>
-</body>
-</html>
+  <div class="container">
+    <div class="logo-container">
+      <a class="logo-icon" href="https://ivankasich.github.io/project-team4/">
+        <svg class="logo-vector" width="168" height="16">
+          <use href="/project-team4/assets/sprite-CI9QTa5D.svg#icon-logo"></use>
+        </svg>
+      </a>
+      <div class="logo"></div>
+    </div>
+    <button class="menu-toggle" data-modal-open>
+      <svg class="logo-icon-two" width="32" height="32">
+        <use href="/project-team4/assets/sprite-CI9QTa5D.svg#icon-1"></use>
+      </svg>
+    </button>
+    <div class="nav-container">
+      <nav class="header-nav">
+        <ul class="header-menu-list">
+          <li class="header-menu-item">
+            <a href="#how-it-works" class="nav-button">How It Works</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#vegetables" class="nav-button">Vegetables</a>
+          </li>
+          <li class="header-menu-item">
+            <a href="#reviews" class="nav-button">Reviews</a>
+          </li>
+        </ul>
+      </nav>
+      <a href="#order-shop" class="shop-now">SHOP NOW</a>
+    </div>
+  </div>
+</header>
 
-    <div class="modal is-open">
+    <div class="modal is-open" data-modal>
   <div class="modal-content">
-    <button type="button" class="btn-x">
+    <button type="button" class="btn-x" data-modal-close>
       <svg class="svg-x" width="32" height="32">
         <use href="/project-team4/assets/symbol-defs-BZ0niJBX.svg#icon-Property-1x"></use>
       </svg>
@@ -75,7 +79,7 @@
         </li>
       </ul>
       <div class="last-container">
-        <a class="last-link last-w" href="#shop-now"> SHOP NOW </a>
+        <a class="last-link last-w" href="#order-shop"> SHOP NOW </a>
       </div>
     </nav>
   </div>
@@ -92,7 +96,7 @@
     </p>
   </div>
 </section>
-      <section class="section works">
+      <section class="section works" id="how-it-works">
   <h2 class="visually-hidden">How it works</h2>
   <div class="works-image-container">
     <div class="works-image-wrapper">
@@ -292,7 +296,7 @@
             </div>    
         </section> 
 
-      <section class="reviews">
+      <section class="reviews" id="reviews">
   <div class="container">
     <h2 class="reviews-title">
       reviews from our <span class="reviews-title-part">customers</span>
@@ -405,9 +409,12 @@
       <!-- Лого та слоган -->
       <div class="footer-brand">
         <!-- Лого з іконкою зі спрайту -->
-        <a class="footer-logo" href="#">
+        <a
+          class="footer-logo"
+          href="https://ivankasich.github.io/project-team4/"
+        >
           <svg class="icon-foot" width="168" height="16">
-            <use href="../img/sprite.svg#icon-logo"></use>
+            <use href="/project-team4/assets/sprite-CI9QTa5D.svg#icon-logo"></use>
           </svg>
         </a>
 
