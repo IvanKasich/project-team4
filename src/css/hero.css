@@ -43,10 +43,14 @@
 
 .hero-title span {
   position: relative;
-  padding: 0 4px;
   animation: highlight 2s;
   animation-delay: calc(var(--i) * 0.2s);
   border-radius: 12px;
+}
+.hero-title span:not(:last-child):after {
+  content: '';
+  width: 10px;
+  display: inline-block;
 }
 
 @keyframes highlight {
